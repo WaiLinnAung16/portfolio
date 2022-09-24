@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap');
+$primary: #244365;
+$secondary: #2C65A5;
+$sec-light:#0D6FDE;
+$white: #F2F2F2;
+
+$body-bg: $primary;
+$font-family-sans-serif:'Inter', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/animate.css/animate.min.css";
+
+.w-10{
+  width: 10%;
+}
+.w-50{
+  width: 50%;
+}
+.w-80{
+  width: 80%;
+}
+.w-90{
+  width: 90%;
+}
+.vh-80{
+  height: 80vh;
+}
+.animate-delay-1{
+  animation-delay: .5s;
+}
+.animate-delay-2{
+  animation-delay: 1s;
+}
+.animate-delay-3{
+  animation-delay: 1.5s;
+}
+.animate-delay-4{
+   animation-delay: 2s;
+}
+.animate-delay-5{
+  animation-delay: 2.5s;
+}
+.animate-delay-6{
+  animation-delay: 3s;
+}
+
+.title{
+  font-size: 60px;
+}
+.hero-para{
+  width: 70%;
+}
+.auto-input,.typed-cursor{
+  color: $sec-light;
+}
+.banner{
+  width: 100%;
+  height:100vh;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pro-bg{
+  width: 66%;
+  position: absolute;
+  top: -55%;
+  right: -8%;
+}
+.img-container{
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  line-height: 600px;
+  margin-left: 250px;
+}
+.pro-img{
+  width: 110%;
+}
+.scroll{
+  width: 6%;
+  position: absolute;
+  bottom: 8%;
+  left:7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -2;
+}
+.scroll p{
+  width: 5%;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+.arrow{
+  height: 75px;
+}
+.contact-btn{
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right,#005aa7
+  , #fffde430);
+  color: $white;
+  transition: .3s;
+}
+.contact-btn:hover{
+  background-color: $sec-light;
+}
+
+@media screen and (max-width: 1440px) {
+  .hero-lg {
+    width: 90% !important;
+  }
+  .title{
+    font-size: 47px !important;
+  }
+  .banner{
+    width: 100%;
+    height:100vh;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .pro-bg{
+    width: 90%;
+    position: absolute;
+    top: -40%;
+    right: -17%;
+    z-index: 1000;
+  }
+  .pro-img{
+    width: 100%;
+  }
+  .img-container{
+    margin-left: 0;
+  }
+  .scroll{
+    bottom: 0;
+    left:0;
+  }
+  .scroll p{
+    width: 10%;
+    font-size: 13px;
+    word-wrap: break-word;
+  }
+  .arrow{
+    height: 60px;
+  }
+}

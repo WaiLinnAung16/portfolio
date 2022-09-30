@@ -7,9 +7,21 @@ $white: #F2F2F2;
 $body-bg: $primary;
 $font-family-sans-serif:'Inter', sans-serif;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/animate.css/animate.min.css";
+$card-bg: $primary;
+$card-color: $white;
 
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/slick/slick.css";
+@import "../node_modules/slick/slick-theme.css";
+
+.slick-next{
+  right: -55%;
+}
+.slick-prev{
+  left: -55%;
+}
 .w-10{
   width: 10%;
 }
@@ -43,7 +55,6 @@ $font-family-sans-serif:'Inter', sans-serif;
 .animate-delay-6{
   animation-delay: 3s;
 }
-
 .title{
   font-size: 60px;
 }
@@ -108,9 +119,56 @@ $font-family-sans-serif:'Inter', sans-serif;
 .contact-btn:hover{
   background-color: $sec-light;
 }
-//about
-
-
+#contact{
+  background-color: #0D6FDE15;
+}
+.contact-icon{
+  font-size: 22px;
+  color: $white;
+}
+.contact-img{
+  width: 80%;
+}
+.input-1, .input-2{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: $white;
+}
+.input-1 i, .input-2 i{
+  color: $primary;
+  font-size: 22px;
+  padding-top: 2px;
+  margin-right: 20px;
+}
+input{
+  color: $primary;
+  background: none;
+  border: none;
+  outline: none;
+}
+textarea{
+  padding: 10px;
+}
+input::placeholder, textarea::placeholder{
+  color: $primary;
+}
+.social-icon{
+  font-size: 30px;
+  color: $primary;
+  margin-left: 20px;
+}
+#footer p{
+  font-size: 14px;
+}
+.project-scroll{
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  display: none;
+}
 @media screen and (max-width: 1440px) {
 
   .hero-lg {
@@ -147,5 +205,8 @@ $font-family-sans-serif:'Inter', sans-serif;
   }
   .about-img{
     width: 80%;
+  }
+  .contact-img{
+    width: 100%;
   }
 }

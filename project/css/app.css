@@ -6,7 +6,10 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/slick/slick.css";
+@import "../node_modules/slick/slick-theme.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -4117,8 +4120,8 @@ textarea.form-control-lg {
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
   --bs-card-cap-color: ;
   --bs-card-height: ;
-  --bs-card-color: ;
-  --bs-card-bg: #F2F2F2;
+  --bs-card-color: #F2F2F2;
+  --bs-card-bg: #244365;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -10767,6 +10770,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.slick-next {
+  right: -55%;
+}
+
+.slick-prev {
+  left: -55%;
+}
+
 .w-10 {
   width: 10%;
 }
@@ -10886,6 +10897,68 @@ textarea.form-control-lg {
   background-color: #0D6FDE;
 }
 
+#contact {
+  background-color: rgba(13, 111, 222, 0.0823529412);
+}
+
+.contact-icon {
+  font-size: 22px;
+  color: #F2F2F2;
+}
+
+.contact-img {
+  width: 80%;
+}
+
+.input-1, .input-2 {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #F2F2F2;
+}
+
+.input-1 i, .input-2 i {
+  color: #244365;
+  font-size: 22px;
+  padding-top: 2px;
+  margin-right: 20px;
+}
+
+input {
+  color: #244365;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  padding: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #244365;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #244365;
+  margin-left: 20px;
+}
+
+#footer p {
+  font-size: 14px;
+}
+
+.project-scroll {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
   .hero-lg {
     width: 90% !important;
@@ -10921,6 +10994,9 @@ textarea.form-control-lg {
   }
   .about-img {
     width: 80%;
+  }
+  .contact-img {
+    width: 100%;
   }
 }
 

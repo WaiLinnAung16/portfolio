@@ -2,13 +2,16 @@
 $primary: #244365;
 $secondary: #2C65A5;
 $sec-light:#0D6FDE;
-$white: #F2F2F2;
+$white: #eeeeee;
 
 $body-bg: $primary;
 $font-family-sans-serif:'Inter', sans-serif;
 
 $card-bg: $primary;
 $card-color: $white;
+
+$progress-bg: #ffffff;
+$progress-border-radius: 20px;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
@@ -27,6 +30,9 @@ $card-color: $white;
 }
 .w-50{
   width: 50%;
+}
+.w-65{
+  width:65%;
 }
 .w-80{
   width: 80%;
@@ -165,6 +171,23 @@ input::placeholder, textarea::placeholder{
 }
 .project-scroll{
   overflow-y: scroll;
+}
+.circle{
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fafafa;
+  box-shadow: 0 5px 5px 0 #00000025;
+}
+.skill-icon{
+  font-size: 34px;
+  color: #CB1515;
+}
+.html{
+  background-color: #CB1515;
 }
 ::-webkit-scrollbar{
   display: none;

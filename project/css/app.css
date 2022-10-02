@@ -8,8 +8,6 @@
  */
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../node_modules/animate.css/animate.min.css";
-@import "../node_modules/slick/slick.css";
-@import "../node_modules/slick/slick-theme.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10830,6 +10828,12 @@ textarea.form-control-lg {
   font-size: 60px;
 }
 
+.nav-btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #0D6FDE;
+}
+
 .hero-para {
   width: 70%;
 }
@@ -10981,6 +10985,10 @@ input::placeholder, textarea::placeholder {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
 }
 
 @media screen and (max-width: 1440px) {

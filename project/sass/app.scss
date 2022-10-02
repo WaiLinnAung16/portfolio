@@ -16,8 +16,6 @@ $progress-border-radius: 20px;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../node_modules/animate.css/animate.min.css";
-@import "../node_modules/slick/slick.css";
-@import "../node_modules/slick/slick-theme.css";
 
 .slick-next{
   right: -55%;
@@ -63,6 +61,11 @@ $progress-border-radius: 20px;
 }
 .title{
   font-size: 60px;
+}
+.nav-btn{
+  border: none;
+  border-radius: 10px;
+ background-color: $sec-light;
 }
 .hero-para{
   width: 70%;
@@ -191,6 +194,9 @@ input::placeholder, textarea::placeholder{
 }
 ::-webkit-scrollbar{
   display: none;
+}
+.slick-prev:before,.slick-next:before{
+  font-size: 40px;
 }
 @media screen and (max-width: 1440px) {
 

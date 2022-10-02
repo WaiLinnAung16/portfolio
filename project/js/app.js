@@ -9,7 +9,16 @@ $(".project-slick").slick({
     slidesToScroll: 1,
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 5000
 })
 
-
+wow = new WOW(
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animate__animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+    }
+)
+wow.init();

@@ -9,7 +9,28 @@ $(".project-slick").slick({
     slidesToScroll: 1,
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 5000,
+    infinite: true,
+    responsive:[
+        {
+            breakpoint: 770,
+            settings:{
+                dots:true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows:false
+            }
+        },
+        {
+            breakpoint: 480,
+            settings:{
+                dots:true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows:false
+            }
+        }
+    ]
 })
 
 wow = new WOW(

@@ -10776,6 +10776,19 @@ textarea.form-control-lg {
   left: -55%;
 }
 
+.slick-dots {
+  bottom: 55px;
+}
+
+.slick-dots li button:before {
+  color: #eeeeee;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0D6FDE;
+}
+
 .w-10 {
   width: 10%;
 }
@@ -10825,7 +10838,7 @@ textarea.form-control-lg {
 }
 
 .title {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .nav-btn {
@@ -10835,7 +10848,7 @@ textarea.form-control-lg {
 }
 
 .hero-para {
-  width: 70%;
+  width: 80%;
 }
 
 .auto-input, .typed-cursor {
@@ -10844,7 +10857,7 @@ textarea.form-control-lg {
 
 .banner {
   width: 100%;
-  height: 103%;
+  height: 100%;
   z-index: -1;
   overflow: hidden;
   position: absolute;
@@ -10855,7 +10868,7 @@ textarea.form-control-lg {
 .pro-bg {
   width: 66%;
   position: absolute;
-  top: -53%;
+  top: -48%;
   right: -8%;
 }
 
@@ -10875,7 +10888,7 @@ textarea.form-control-lg {
   width: 6%;
   position: absolute;
   bottom: 8%;
-  left: 7%;
+  left: 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10991,17 +11004,25 @@ input::placeholder, textarea::placeholder {
   font-size: 40px;
 }
 
+.copyright {
+  position: absolute;
+  font-size: 12px;
+  color: #454545;
+  bottom: 0;
+  right: 0;
+}
+
 @media screen and (max-width: 1440px) {
   .hero-lg {
     width: 90% !important;
   }
   .title {
-    font-size: 47px !important;
+    font-size: 40px;
   }
   .pro-bg {
     width: 90%;
     position: absolute;
-    top: -37%;
+    top: -40%;
     right: -17%;
     z-index: 1000;
   }
@@ -11029,6 +11050,48 @@ input::placeholder, textarea::placeholder {
   }
   .contact-img {
     width: 100%;
+  }
+  .slick-arrow {
+    width: 50px;
+  }
+  .slick-next {
+    right: -2%;
+  }
+  .slick-prev {
+    left: -2%;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 27px;
+  }
+  .hero-para {
+    width: 100%;
+  }
+  .hero-para p {
+    font-size: 15px;
+  }
+  .img-container {
+    width: 380px;
+    height: 380px;
+    line-height: 380px;
+    padding-right: 20px;
+  }
+  .input-1, .input-2 {
+    width: 380px;
+  }
+  textarea {
+    width: 100%;
+  }
+  .pro-bg {
+    width: 200%;
+    top: 16%;
+    right: -50%;
+  }
+  .copyright {
+    bottom: 0;
+    left: 30%;
   }
 }
 

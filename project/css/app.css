@@ -10841,10 +10841,40 @@ textarea.form-control-lg {
   font-size: 50px;
 }
 
-.nav-btn {
-  border: none;
-  border-radius: 10px;
-  background-color: #0D6FDE;
+.logo {
+  height: 35px;
+}
+
+.site-nav {
+  position: absolute;
+}
+
+.site-nav-scroll {
+  position: fixed;
+  background-color: #244365;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1450980392);
+}
+
+.site-nav-scroll.nav-item.nav-link {
+  color: #000;
+}
+
+.navbar-toggler {
+  border: 2px solid #2C65A5;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1450980392);
+}
+
+.navbar-toggler:hover {
+  box-shadow: none;
+}
+
+.navbar-toggler:active, .navbar-toggler:focus {
+  border: 2px solid #eeeeee;
+  box-shadow: none;
+}
+
+.menu-bar {
+  height: 20px;
 }
 
 .hero-para {
@@ -11063,6 +11093,25 @@ input::placeholder, textarea::placeholder {
   }
 }
 @media screen and (max-width: 767px) {
+  .site-nav {
+    background-color: #244365;
+  }
+  .navbar {
+    background-color: #244365 !important;
+  }
+  .nav-item {
+    background-color: #2C65A5;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1450980392);
+    transition: 0.6s;
+  }
+  .nav-item:hover {
+    background-color: #0D6FDE;
+    box-shadow: none;
+  }
+  .logo {
+    height: 27px;
+  }
   .title {
     font-size: 27px;
   }

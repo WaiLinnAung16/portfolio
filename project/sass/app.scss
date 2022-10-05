@@ -72,10 +72,33 @@ $progress-border-radius: 20px;
 .title{
   font-size: 50px;
 }
-.nav-btn{
-  border: none;
-  border-radius: 10px;
-  background-color: $sec-light;
+.logo{
+  height: 35px;
+}
+.site-nav{
+  position: absolute;
+}
+.site-nav-scroll{
+  position: fixed;
+  background-color: $primary;
+  box-shadow: 0 5px 5px 0 #00000025;
+}
+.site-nav-scroll.nav-item.nav-link{
+  color: #000;
+}
+.navbar-toggler{
+  border: 2px solid $secondary;
+  box-shadow:  0 5px 5px 0 #00000025;
+}
+.navbar-toggler:hover{
+  box-shadow:  none;
+}
+.navbar-toggler:active,.navbar-toggler:focus{
+  border: 2px solid $white;
+  box-shadow:  none;
+}
+.menu-bar{
+  height: 20px;
 }
 .hero-para{
   width: 80%;
@@ -266,6 +289,25 @@ input::placeholder, textarea::placeholder{
   }
 }
 @media screen and (max-width: 767px) {
+  .site-nav{
+    background-color: $primary;
+  }
+  .navbar{
+    background-color: $primary !important;
+  }
+  .nav-item{
+    background-color: $secondary;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 #00000025;
+    transition: .6s;
+  }
+  .nav-item:hover{
+    background-color: $sec-light;
+    box-shadow: none;
+  }
+  .logo{
+    height: 27px;
+  }
   .title{
     font-size: 27px;
   }

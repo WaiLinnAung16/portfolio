@@ -5,6 +5,40 @@ let typed = new Typed(".auto-input", {
     loop: true,
 });
 
+let screenHeight = $(window).height();
+console.log(screenHeight)
+$(window).scroll(function (){
+    let currentPosition = $(this).scrollTop();
+    if(currentPosition >= screenHeight){
+        $(".site-nav").addClass("site-nav-scroll")
+    }else{
+        $(".site-nav").removeClass("site-nav-scroll");
+        setActive('home')
+    }
+});
+
+function setActive(current){
+    $('.nav-link').removeClass("active");
+    $(`.nav-link[href='#${current}']`).addClass("active");
+}
+function navScroll(){
+    let currentSection = $('section[id]');
+    currentSection.waypoint(function (direction) {
+        if(direction==="down"){
+            let currentSectionId = $(this.element).attr('id');
+            setActive(currentSectionId)
+        }
+    });
+
+    currentSection.waypoint(function (direction) {
+        if(direction==="up"){
+            let currentSectionId = $(this.element).attr('id');
+            setActive(currentSectionId)
+        }
+    });
+
+}
+navScroll()
 $(".project-slick").slick({
     slidesToScroll: 1,
     slidesToShow: 3,

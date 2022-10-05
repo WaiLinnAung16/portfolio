@@ -30,30 +30,28 @@
     <title>Portfolio | WaiLinnAung</title>
 </head>
 <body>
-<header class="container-fluid position-absolute" style="z-index: 2">
+<header class="container-fluid site-nav" style="z-index: 50">
     <div class="container">
-        <nav class="navbar navbar-expand-lg bg-transparent my-4">
+        <nav class="navbar navbar-expand-lg bg-transparent py-3 px-2 px-lg-0 py-lg-3">
             <a class="navbar-brand wow animate__jackInTheBox" href="#">
-                <img src="./assets/logo.svg" alt="logo" height="38">
+                <img src="./assets/logo.svg" alt="logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img src="./assets/menu-bar.svg" alt="..." class="menu-bar">
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item ms-4 wow animate__slideInRight">
-                        <button class="nav-btn">
-                            <a class="nav-link text-white fw-bold" href="#home">Home</a>
-                        </button>
+                <ul class="navbar-nav ms-auto my-2 mb-lg-0 text-center navbar-dark">
+                    <li class="nav-item ms-lg-4 my-2 wow animate__slideInRight">
+                        <a class="nav-link active fw-bold" href="#home">Home</a>
                     </li>
-                    <li class="nav-item  ms-4 wow animate__slideInRight">
-                        <a class="nav-link text-white fw-bold" href="#about">About</a>
+                    <li class="nav-item  ms-lg-4 my-2 wow animate__slideInRight">
+                        <a class="nav-link fw-bold" href="#about">About</a>
                     </li>
-                    <li class="nav-item  ms-4 wow animate__slideInRight">
-                        <a class="nav-link text-white fw-bold" href="#project">Projects</a>
+                    <li class="nav-item  ms-lg-4 my-2 wow animate__slideInRight">
+                        <a class="nav-link fw-bold" href="#project">Projects</a>
                     </li>
-                    <li class="nav-item  ms-4 wow animate__slideInRight">
-                        <a class="nav-link text-white fw-bold" href="#contact">Contact</a>
+                    <li class="nav-item  ms-lg-4 my-2 wow animate__slideInRight">
+                        <a class="nav-link fw-bold" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -105,6 +103,7 @@
 <section id="about" class="bg-white">
     <div class="container-fluid">
         <div class="container">
+            <div class="pt-4"></div>
             <p class="h4 text-primary text-center text-uppercase fw-bold pt-5 wow animate__fadeInUp">About Me</p>
             <div class="row justify-content-center align-items-center min-vh-100 py-5">
                 <div class="col-12 col-lg-6 text-center text-lg-start">
@@ -192,6 +191,7 @@
 <section id="project">
     <div class="container-fluid">
         <div class="container">
+            <div class="pt-5"></div>
             <p class="h4 text-white text-center text-uppercase fw-bold pt-5 wow animate__fadeInUp">Projects</p>
             <div class="row align-items-center vh-100 project-slick wow animate__zoomIn">
                 <div class="col-12 col-lg-4 mx-5 wow animate__fadeInUp animate-delay-1">
@@ -285,6 +285,7 @@
 <section id="contact">
     <div class="container-fluid">
         <div class="container">
+            <div class="pt-5 mt-5"></div>
             <p class="h4 text-white text-center text-uppercase fw-bold pt-5 wow animate__fadeInUp">Contact</p>
         </div>
         <div class="row justify-content-center align-items-center min-vh-100">
@@ -328,7 +329,7 @@
                     <div class="input-3">
                         <textarea name="MESSAGE" id="message" cols="40" rows="10" placeholder="MESSAGE"></textarea>
                     </div>
-                    <button class="btn btn-secondary text-uppercase">Send Message</button>
+                    <button class="btn btn-secondary text-uppercase text-white mt-2">Send Message</button>
                 </div>
             </div>
         </div>
@@ -345,13 +346,13 @@
                 </div>
                 <div class="col-12 col-lg-5 mt-4">
                     <ul class="navbar-nav flex-row justify-content-center justify-content-lg-start">
-                        <li class="nav-item  ms-lg-4 ms-3">
+                        <li class="ms-lg-4 ms-3">
                             <a class="nav-link text-primary fw-light" href="#home">Home</a>
                         </li>
-                        <li class="nav-item  ms-lg-4 ms-3">
+                        <li class="ms-lg-4 ms-3">
                             <a class="nav-link text-primary fw-light" href="#about">About</a>
                         </li>
-                        <li class="nav-item  ms-lg-4 ms-3">
+                        <li class="ms-lg-4 ms-3">
                             <a class="nav-link text-primary fw-light" href="#project">Projects</a>
                         </li>
                     </ul>
@@ -388,6 +389,7 @@
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./vendor/slick/slick.min.js"></script>
 <script src="./vendor/wow/wow.min.js"></script>
+<script src="./vendor/waypoint/jquery.waypoints.js"></script>
 <script src="./js/app.js"></script>
 
 </body>

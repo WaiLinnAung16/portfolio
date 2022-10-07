@@ -1,5 +1,5 @@
 let typed = new Typed(".auto-input", {
-    strings:["Wai Linn Aung","Front-end Developer"],
+    strings:["Wai Linn Aung","Web Desginer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true,
@@ -38,7 +38,8 @@ function navScroll(){
     });
 
 }
-navScroll()
+navScroll();
+
 $(".project-slick").slick({
     slidesToScroll: 1,
     slidesToShow: 3,
@@ -47,14 +48,21 @@ $(".project-slick").slick({
     infinite: true,
     responsive:[
         {
-            breakpoint: 770,
+            breakpoint: 1026,
             settings:{
-                dots:true,
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                arrows:false
             }
         },
+        // {
+        //     breakpoint: 770,
+        //     settings:{
+        //         dots:true,
+        //         slidesToShow: 2,
+        //         slidesToScroll: 2,
+        //         arrows:false
+        //     }
+        // },
         {
             breakpoint: 480,
             settings:{

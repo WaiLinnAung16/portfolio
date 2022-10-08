@@ -43,15 +43,15 @@ navScroll();
 $(".project-slick").slick({
     slidesToScroll: 1,
     slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    infinite: true,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    // infinite: true,
     responsive:[
         {
             breakpoint: 1026,
             settings:{
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         },
         // {

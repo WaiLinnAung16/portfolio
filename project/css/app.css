@@ -10940,6 +10940,10 @@ textarea.form-control-lg {
   width: 80%;
 }
 
+.card-des {
+  max-height: 200px;
+}
+
 .input-container {
   width: 400px;
 }
@@ -11186,8 +11190,11 @@ input::placeholder, textarea::placeholder {
     bottom: 0;
     left: 30%;
   }
+  .card-des {
+    max-height: 400px;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .img-container {
     width: 350px;
   }

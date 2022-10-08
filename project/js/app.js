@@ -50,19 +50,10 @@ $(".project-slick").slick({
         {
             breakpoint: 1026,
             settings:{
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
             }
         },
-        // {
-        //     breakpoint: 770,
-        //     settings:{
-        //         dots:true,
-        //         slidesToShow: 2,
-        //         slidesToScroll: 2,
-        //         arrows:false
-        //     }
-        // },
         {
             breakpoint: 480,
             settings:{

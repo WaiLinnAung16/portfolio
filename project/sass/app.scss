@@ -110,10 +110,10 @@ $progress-border-radius: 20px;
   height: 600px;
   text-align: center;
   line-height: 600px;
-  margin-left: 250px;
+  margin-left: 280px;
 }
 .pro-img{
-  width: 110%;
+  width: 95%;
 }
 .scroll{
   width: 6%;
@@ -261,7 +261,7 @@ input::placeholder, textarea::placeholder{
     z-index: 1000;
   }
   .pro-img{
-    width: 100%;
+    width: 80%;
   }
   .img-container{
     margin-left: 0;
@@ -352,6 +352,9 @@ input::placeholder, textarea::placeholder{
   }
   .input-container{
     width: 330px;
+  }
+  .card-des{
+    max-height: 500px;
   }
 }
 @media screen and (max-width: 576px) {

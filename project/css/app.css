@@ -10910,6 +10910,14 @@ textarea.form-control-lg {
   word-wrap: break-word;
 }
 
+.about-img {
+  transition: 0.6s;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
 .arrow {
   height: 75px;
 }
@@ -11019,20 +11027,16 @@ input::placeholder, textarea::placeholder {
   background-color: #CB1515;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .slick-prev:before, .slick-next:before {
   font-size: 40px;
 }
 
 .slick-next {
-  right: -55%;
+  right: -5%;
 }
 
 .slick-prev {
-  left: -55%;
+  left: -5%;
 }
 
 .slick-dots {
@@ -11046,6 +11050,10 @@ input::placeholder, textarea::placeholder {
 
 .slick-dots li.slick-active button:before {
   color: #0D6FDE;
+}
+
+.slick-arrow {
+  width: 50px;
 }
 
 .copyright {

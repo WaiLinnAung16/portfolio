@@ -10816,6 +10816,13 @@ textarea.form-control-lg {
   animation-delay: 3s;
 }
 
+#home {
+  background-image: url("../assets/profile-bg-5.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 90% 55%;
+}
+
 .title {
   font-size: 50px;
 }
@@ -10864,50 +10871,12 @@ textarea.form-control-lg {
   color: #0D6FDE;
 }
 
-.banner {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.pro-bg {
-  width: 66%;
-  position: absolute;
-  top: -48%;
-  right: -8%;
-}
-
 .img-container {
-  width: 600px;
-  height: 600px;
-  text-align: center;
-  line-height: 600px;
-  margin-left: 280px;
+  height: 90%;
 }
 
 .pro-img {
-  width: 95%;
-}
-
-.scroll {
-  width: 6%;
-  position: absolute;
-  bottom: 8%;
-  left: 18%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: -2;
-}
-
-.scroll p {
-  width: 5%;
-  font-size: 16px;
-  word-wrap: break-word;
+  height: 100%;
 }
 
 .about-img {
@@ -11003,10 +10972,6 @@ input::placeholder, textarea::placeholder {
   font-size: 14px;
 }
 
-.project-scroll {
-  overflow-y: scroll;
-}
-
 .circle {
   width: 55px;
   height: 55px;
@@ -11064,34 +11029,26 @@ input::placeholder, textarea::placeholder {
   right: 0;
 }
 
-@media screen and (max-width: 1440px) {
-  .hero-lg {
-    width: 90% !important;
+@media screen and (max-width: 1700px) {
+  #home {
+    background-position: 110% 60%;
   }
+}
+@media screen and (max-width: 1600px) {
+  #home {
+    background-position: 120% 60%;
+  }
+}
+@media screen and (max-width: 1440px) {
   .title {
     font-size: 40px;
   }
-  .pro-bg {
-    width: 90%;
-    position: absolute;
-    top: -40%;
-    right: -17%;
-    z-index: 1000;
+  #home {
+    background-size: 90%;
+    background-position: 200% 60%;
   }
   .pro-img {
     width: 80%;
-  }
-  .img-container {
-    margin-left: 0;
-  }
-  .scroll {
-    bottom: 0;
-    left: 0;
-  }
-  .scroll p {
-    width: 10%;
-    font-size: 13px;
-    word-wrap: break-word;
   }
   .arrow {
     height: 55px;
@@ -11114,29 +11071,52 @@ input::placeholder, textarea::placeholder {
     z-index: 2;
   }
 }
-@media screen and (max-width: 1024px) {
-  .img-container {
-    width: 450px;
-    margin-left: 50px;
-  }
-  .hero-para {
-    width: 100%;
-  }
-  .pro-bg {
-    top: -13%;
-    right: -24%;
-  }
-  .scroll {
-    left: -12px;
-  }
-  .title {
-    font-size: 35px;
-  }
+@media screen and (max-width: 1400px) {
   .contact-img-container {
     display: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  #home {
+    background-position: 222% 80%;
+  }
+  .hero-para {
+    width: 100%;
+  }
+  .img-container {
+    height: 40%;
+  }
+  .title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 980px) {
+  #home {
+    background-image: url("../assets/profile-bg-6.svg");
+    background-size: 110%;
+    background-position: 0 -55%;
+  }
+  .pro-img {
+    width: 55%;
+    padding-bottom: 20px;
+  }
+  .card-des {
+    max-height: 700px;
+  }
+  .slick-next {
+    right: -10%;
+  }
+  .slick-prev {
+    left: -10%;
+  }
+  .input-container {
+    width: 97%;
+  }
+}
 @media screen and (max-width: 768px) {
+  #home {
+    background-image: none;
+  }
   .navbar {
     background-color: #244365 !important;
   }
@@ -11157,22 +11137,11 @@ input::placeholder, textarea::placeholder {
     width: 80%;
     margin: 0 auto;
   }
-  .pro-bg {
-    top: 14%;
-    right: -20%;
-    width: 140%;
-  }
-  .img-container {
-    width: 400px;
-    height: 400px;
-    line-height: 400px;
-    margin: 0 auto;
-  }
   .about-img {
     width: 60%;
   }
   .input-container {
-    width: 330px;
+    width: 100%;
   }
   .card-des {
     max-height: 500px;
@@ -11193,15 +11162,11 @@ input::placeholder, textarea::placeholder {
   .hero-para p {
     font-size: 15px;
   }
-  .img-container {
-    width: 350px;
-    margin: 0 auto;
-  }
   .about-img {
-    width: 90%;
+    width: 100%;
   }
   .input-container {
-    width: 360px;
+    width: 100%;
   }
   .copyright {
     bottom: 0;
@@ -11210,10 +11175,18 @@ input::placeholder, textarea::placeholder {
   .card-des {
     max-height: 400px;
   }
+  .contact-text {
+    width: 90%;
+  }
 }
-@media screen and (max-width: 400px) {
-  .img-container {
-    width: 350px;
+@media screen and (max-width: 450px) {
+  .pro-img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .input-container {
+    width: 300px;
   }
 }
 

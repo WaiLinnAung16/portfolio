@@ -48,10 +48,26 @@ $(".project-slick").slick({
     // infinite: true,
     responsive:[
         {
+            breakpoint: 1400,
+            settings:{
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
             breakpoint: 1026,
             settings:{
                 slidesToShow: 2,
                 slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 800,
+            settings:{
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows:false,
+                dots:true,
             }
         },
         {

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap');
-$primary: #244365;
+$primary: #194b80;
 $secondary: #2C65A5;
 $sec-light:#0D6FDE;
 $white: #eeeeee;
@@ -143,30 +143,44 @@ $progress-border-radius: 20px;
 .input-container{
   width: 400px;
 }
+input{
+  width: 100%;
+  color: $primary;
+  background: none;
+  border: none;
+  outline: none;
+}
 .input-1, .input-2{
   width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   padding: 10px 20px;
-  background-color: $white;
+  background-color: #ffffff;
 }
-.input-1 i, .input-2 i{
+.input-3{
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+.input-1 i, .input-2 i, .input-3 i{
   color: $primary;
   font-size: 22px;
   padding-top: 2px;
   margin-right: 20px;
 }
-input{
-  color: $primary;
-  width: 100%;
-  background: none;
-  border: none;
-  outline: none;
+.input-3 i{
+  padding: 0;
+  margin: 10px 18px;
 }
 textarea{
   width: 100%;
-  padding: 10px;
+  color: $primary;
+  padding-top: 10px;
+  border: none;
+}
+textarea:focus-visible{
+  outline: none;
 }
 input::placeholder, textarea::placeholder{
   color: $primary;
@@ -288,6 +302,11 @@ input::placeholder, textarea::placeholder{
   }
 
 }
+@media screen and (max-width: 838px) {
+  #project{
+    overflow-y: scroll;
+  }
+}
 @media screen and (max-width: 980px){
   #home{
     background-image: url("../assets/profile-bg-6.svg");
@@ -309,6 +328,12 @@ input::placeholder, textarea::placeholder{
   }
   .input-container{
     width: 97%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #home{
+    background-position:0 -550%;
   }
 }
 @media screen and (max-width: 768px){

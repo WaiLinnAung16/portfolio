@@ -62,6 +62,14 @@ $(".project-slick").slick({
             }
         },
         {
+            breakpoint: 839,
+            settings:{
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows:false,
+            }
+        },
+        {
             breakpoint: 800,
             settings:{
                 slidesToShow: 2,
